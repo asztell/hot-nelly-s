@@ -1,5 +1,4 @@
 var customer = {
-	routeName: '',
 	customerName: '',
 	phoneNumber: '',
 	customerEmail: '',
@@ -8,4 +7,4 @@ var customer = {
 
 module.exports = {
 	customer: customer
-}
+};

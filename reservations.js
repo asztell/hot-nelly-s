@@ -1,3 +1,5 @@
+var customer = require('./customer');
+
 // Reservations Info (DATA)
 // =============================================================
 
@@ -22,6 +24,13 @@ var reservations = [
 	}
 ];
 
+var makeReservation = function(name, phone, email) {
+	var ID = reservations.length.toString();
+	var customer = new customer(name, phone, email, ID);
+	reservations.push(customer);
+}
+
 module.exports = {
-	reservations: reservations
+	reservations: reservations,
+	makeReservation : makeReservation
 };

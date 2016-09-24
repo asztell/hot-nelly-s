@@ -35,26 +35,26 @@
 					</div>
 					<div class="panel-body">
 
-						<form role="form" action="makeReservation" method="POST">
+						<form role="form" action="http://localhost:3000/reserve" method="POST">
 
 							<div class="form-group">
 								<label for="">Name</label>
-								<input type="text" class="form-control" id="reserve_name">
+								<input type="text" class="form-control" id="reserve_name" name="name">
 							</div>
 
 							<div class="form-group">
 								<label for="">Phone Number</label>
-								<input type="text" class="form-control" id="reserve_phone">
+								<input type="text" class="form-control" id="reserve_phone" name="phone">
 							</div>
 
 							<div class="form-group">
 								<label for="">Email</label>
-								<input type="text" class="form-control" id="reserve_email">
+								<input type="text" class="form-control" id="reserve_email" name="email">
 							</div>
 
 							<div class="form-group">
 								<label for="">Unique ID</label>
-								<input type="text" class="form-control" id="reserve_uniqueID">
+								<input type="text" class="form-control" id="reserve_uniqueID" name="id">
 							</div>
 
 							<button type="submit" class="btn btn-primary submit">Submit</button>
